@@ -45,7 +45,10 @@ class BlogItem extends React.Component {
       _.map(
         this.state.source,
         (source, key) => (
-          DOM.div({ key }, React.createElement(Image, source), React.createElement(TextBox, source))
+          DOM.div(
+            { key }
+            , React.createElement(Image, source)
+            , React.createElement(TextBox, source))
         )
       )
     )
